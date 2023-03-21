@@ -26,9 +26,12 @@ h2 {
     font-size: 48px;
 }
 
+h4 {
+    font-size: 29px;
+}
+
 p {
     line-height: 160%;
-    margin-bottom: 20px;
 }
 
 button {
@@ -49,13 +52,13 @@ button {
 }
 
 .centered {
-    padding: 20px 10%;
+    padding: 20px 12%;
 }
 
 /* Intestazione */
 
 header {
-    min-height: 500px;
+    min-height: 550px;
     color: #ffffff;
     margin-bottom: 80px;
     background-color: #255ee9;
@@ -75,13 +78,14 @@ header {
 
     header nav ul {
         display: flex;
-        flex-basis: 600px;
+        flex-basis: 550px;
         justify-content: space-between;
     }
 
     /* Jumbotron */
 
     .jumbotron {
+        min-height: 500px;
         padding: 130px 24% 100px;
         display: flex;
         justify-content: center;
@@ -90,12 +94,15 @@ header {
         background-repeat: no-repeat;
         background-size:cover;
 
-
     }
 
     .center-block {
         width: 800px;
         text-align: center;
+    }
+
+    .center-block p {
+        margin-bottom: 20px;
     }
 
     .center-block button.black-back {
@@ -119,12 +126,11 @@ header {
     section.middle-section {
         min-height: 600px;
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
     }
 
     section .col.text {
         width: 460px;
-        /* margin: 20px; */
         padding: 30px;
     }
 
@@ -133,10 +139,36 @@ header {
     section.end-section {
         min-height: 900px;
         text-align: center;
+        padding-bottom: 140px;
+    }
+
+    .end-section .text {
+        display: inline-block;
+        width: 87%;
+    }
+
+    .end-section .img img {
+        width: 100%;
+    }
+
+    .end-section .star-container{
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .end-section .star-back {
+        width: 580px;
+        height: 90px;
+        background-image: url("../img/stars.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin-bottom: 40px;
+
     }
 
     .end-section button {
