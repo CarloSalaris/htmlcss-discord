@@ -21,11 +21,13 @@ ul {
     list-style-type: none;
 }
 
-h1 {
-    font-size: 50px;
+h2 {
+    margin-bottom: 30px;
+    font-size: 48px;
 }
 
-h2 {
+p {
+    line-height: 160%;
     margin-bottom: 20px;
 }
 
@@ -47,7 +49,7 @@ button {
 }
 
 .centered {
-    padding: 20px 15%;
+    padding: 20px 10%;
 }
 
 /* Intestazione */
@@ -55,7 +57,8 @@ button {
 header {
     min-height: 500px;
     color: #ffffff;
-    /* padding: 30px; */
+    margin-bottom: 80px;
+    background-color: #255ee9;
 
 }
 
@@ -65,8 +68,8 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        font-size: 14px;
-        font-weight: 700;
+        font-size: 15px;
+        font-weight: 500;
         height: 78px;
     }
 
@@ -79,7 +82,7 @@ header {
     /* Jumbotron */
 
     .jumbotron {
-        padding: 120px 24% 100px;
+        padding: 130px 24% 100px;
         display: flex;
         justify-content: center;
         background-image: url("../img/jumbo.png");
@@ -91,17 +94,8 @@ header {
     }
 
     .center-block {
-        width: 1000px;
+        width: 800px;
         text-align: center;
-    }
-
-    .center-block h1 {
-        margin-bottom: 40px;
-    }
-
-    .center-block p {
-        margin-bottom: 30px;
-        line-height: 150%;
     }
 
     .center-block button.black-back {
@@ -125,18 +119,13 @@ header {
     section.middle-section {
         min-height: 600px;
         display: flex;
-        justify-content: center;
-    }
-
-    section .col.img {
-        width: 800px;
-        /* margin: 20px; */
+        justify-content: flex-end;
     }
 
     section .col.text {
-        width: 500px;
+        width: 470px;
         /* margin: 20px; */
-        padding: 20px;
+        padding: 30px;
     }
 
     /* last section */
@@ -203,7 +192,7 @@ footer .footer-logo {
 
 /* DEBUG */
 
-header {
+/* header {
     background-color: #255ee9;
 }
 
@@ -234,4 +223,4 @@ footer nav {
 footer .footer-logo {
     background-color: rgb(195, 150, 236);
 }
-
+ */
