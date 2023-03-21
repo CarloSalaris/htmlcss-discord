@@ -65,7 +65,6 @@ button {
 header {
     min-height: 550px;
     color: #ffffff;
-    margin-bottom: 80px;
     background-color: #255ee9;
 
 }
@@ -117,9 +116,13 @@ header {
 
     /* middle sections */
 
+    main section.centered {
+        padding-top: 110px;
+        padding-bottom: 100px;
+    }
+    
     section:nth-of-type(even) {
         background-color: #f6f6f6;
-        padding-top: 110px;
     }
 
     /* ogni seconda riga della sezione in mezzo, nel caso se ne aggiungano in futuro */
@@ -128,7 +131,7 @@ header {
     }
 
     /* WAVE DEVIDER */
-
+    
     .wave-container {  
         height: 90px;
         background-color: #ffffff;
@@ -153,6 +156,10 @@ header {
           height: 45px
         }  
       }
+
+      .wave-container.invert {
+        transform: scaleY(-1);
+      } 
 
       /* END OF WAVE DEVIDER */
 
