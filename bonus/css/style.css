@@ -131,8 +131,17 @@ header {
     }
 
     /* WAVE DEVIDER */
+
+    .wave {
+        display: block;
+        filter: invert(96%);
+    }
+
+    .wave.invert {
+        transform: scaleY(-1);
+    }
     
-    .wave-container {  
+    /* .wave-container {  
         height: 90px;
         background-color: #ffffff;
         position: relative;
@@ -159,7 +168,7 @@ header {
 
       .wave-container.invert {
         transform: scaleY(-1);
-      } 
+      }  */
 
       /* END OF WAVE DEVIDER */
 
