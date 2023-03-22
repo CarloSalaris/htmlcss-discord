@@ -1,4 +1,6 @@
-/* regole generali */
+
+
+/* Regole generali */
 
 * {
     margin: 0;
@@ -34,22 +36,32 @@ p {
     line-height: 160%;
 }
 
-button {
-    border: none;
-    font-size: inherit;
-}
+/* Buttons */
 
-.small-button {
-    padding: 7px 15px;
-    border-radius: 20px;
-}
+    button {
+        border: none;
+        font-size: inherit;
+        border-radius: 30px;
+    }
 
-.big-button {
-    padding: 15px 30px;
-    border-radius: 30px;
-    margin: 0px 10px;
+    .small-button {
+        padding: 7px 15px;
+    }
 
-}
+    .big-button {
+        padding: 15px 30px;
+        margin: 0px 10px;
+    }
+
+    .black-back {
+        color: #ffffff;
+        background-color: #23272a;
+    }
+
+    .blue-back {
+        background-color: #7289da;
+        color: #ffffff;
+    }
 
 .centered {
     padding: 20px 12% 0px;
@@ -89,7 +101,6 @@ header {
     .jumbotron {
         min-height: 500px;
         padding: 130px 24% 100px;
-        display: flex;
         justify-content: center;
         background-image: url("../img/jumbo.png");
         background-position: center;
@@ -107,14 +118,9 @@ header {
         margin-bottom: 20px;
     }
 
-    .center-block button.black-back {
-        color: #ffffff;
-        background-color: #23272a;
-    }
+/* Corpo principale */
 
-/* corpo principale */
-
-    /* middle sections */
+    /* Middle sections */
 
     main section.centered {
         padding-top: 110px;
@@ -130,47 +136,50 @@ header {
         flex-direction: row-reverse;
     }
 
-    /* WAVE DEVIDER */
+        /* WAVE DIVIDER */
 
-    .wave {
-        display: block;
-        filter: invert(96%);
-    }
+            /* usando il file .svg */
+            .wave {
+                display: block;
+                filter: invert(96%);
+            }
 
-    .wave.invert {
-        transform: scaleY(-1);
-    }
-    
-    /* .wave-container {  
-        height: 90px;
-        background-color: #ffffff;
-        position: relative;
-      }
-      
-      .wave-container::before {   
-        content: "";
-        width: 100%;
-        height: 90px;
-        position: absolute;
-        bottom: -0.3%;
-        left: 0;
-        background-size: auto;
-        background-repeat: repeat no-repeat;
-        background-position: 9vw bottom;
-        background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200 92' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 1C19.5523 2 32.2291 3 51.5 6C104.5 13 200 29 300 45C400 61 500 76 600 70C700 64 800 36 900 21C987.526 3 1085.36 -1 1150 0C1169.54 -1 1180.49 0 1200 1V92H1150C1100 92 1000 92 900 92C800 92 700 92 600 92C500 92 400 92 300 92C200 92 100 92 50 92H0V1.98128Z' fill='%23f6f6f6'/></svg>");
-      }
-      
-      @media(max-width:850px) {
-        .wave-container::before {    
-          height: 45px
-        }  
-      }
+            .wave.invert {
+                transform: scaleY(-1);
+            }
 
-      .wave-container.invert {
-        transform: scaleY(-1);
-      }  */
+            /* usando un path creato su https://wavier.art/ */
+            
+            /* .wave-container {  
+                height: 90px;
+                background-color: #ffffff;
+                position: relative;
+            }
+            
+            .wave-container::before {   
+                content: "";
+                width: 100%;
+                height: 90px;
+                position: absolute;
+                bottom: -0.3%;
+                left: 0;
+                background-size: auto;
+                background-repeat: repeat no-repeat;
+                background-position: 9vw bottom;
+                background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200 92' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 1C19.5523 2 32.2291 3 51.5 6C104.5 13 200 29 300 45C400 61 500 76 600 70C700 64 800 36 900 21C987.526 3 1085.36 -1 1150 0C1169.54 -1 1180.49 0 1200 1V92H1150C1100 92 1000 92 900 92C800 92 700 92 600 92C500 92 400 92 300 92C200 92 100 92 50 92H0V1.98128Z' fill='%23f6f6f6'/></svg>");
+            }
+            
+            @media(max-width:850px) {
+                .wave-container::before {    
+                height: 45px
+                }  
+            }
 
-      /* END OF WAVE DEVIDER */
+            .wave-container.invert {
+                transform: scaleY(-1);
+            }  */
+
+        /* END OF WAVE DEVIDER */
 
     section.middle-section {
         min-height: 580px;
@@ -183,7 +192,7 @@ header {
         padding: 30px;
     }
 
-    /* last section */
+    /* Last section */
 
     section.end-section {
         min-height: 900px;
@@ -201,8 +210,8 @@ header {
     }
 
     .end-section .star-container{
-        display: flex;
-        justify-content: center;
+        display: inline-block;
+        text-align: center;
         margin-bottom: 20px;
     }
 
@@ -219,13 +228,6 @@ header {
         margin-bottom: 40px;
 
     }
-
-    .end-section button {
-        color: #ffffff;
-        background-color: #7289da;
-    }
-    
-
 
 /* Footer */
 
@@ -297,11 +299,6 @@ footer .footer-logo {
     display: flex;
     justify-content:space-between;
     padding: 10px 0px;
-}
-
-.footer-logo button {
-    background-color: #7289da;
-    color: #ffffff;
 }
 
 
