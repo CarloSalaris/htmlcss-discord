@@ -138,15 +138,27 @@ header {
 
         /* WAVE DIVIDER */
 
-            /* usando il file .svg */
-            .wave {
+            /* usando come svg in html */
+
+            .wave-1hkxOo {
+                color: #f6f6f6;
+                display: block;
+            }
+
+            .wave-1hkxOo.invert {
+                transform: scaleY(-1);
+            }
+
+
+            /* usando il file .svg + filter */
+            /* .wave {
                 display: block;
                 filter: invert(96%);
             }
 
             .wave.invert {
                 transform: scaleY(-1);
-            }
+            } */
 
             /* usando un path creato su https://wavier.art/ */
             
